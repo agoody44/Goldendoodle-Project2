@@ -11,6 +11,8 @@ const f1bbRouter = require('./routes/f1bb')
 const f2Router = require('./routes/f2')
 const f2bRouter = require('./routes/f2b')
 const f2bbRouter = require('./routes/f2bb')
+const f3Router = require('./routes/f3');
+const multigenRouter = require('./routes/multigen');
 
 // Set up express app
 const app = express();
@@ -35,6 +37,8 @@ app.use('/f1bb', f1bbRouter);
 app.use('/f2', f2Router);
 app.use('/f2b', f2bRouter);
 app.use('/f2bb', f2bbRouter);
+app.use('/f3', f3Router);
+app.use('/multigen', multigenRouter);
 
 
 // Tell App to listen
