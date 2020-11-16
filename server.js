@@ -6,6 +6,8 @@ const indexRouter = require('./routes/index');
 // ^ requiring the index router
 const goldendoodlesRouter = require('./routes/goldendoodles');
 const f1Router = require('./routes/f1');
+const f1bRouter = require('./routes/f1b')
+const f1bbRouter = require('./routes/f1bb')
 
 // Set up express app
 const app = express();
@@ -24,12 +26,10 @@ app.use(express.urlencoded({ extended: false }));
 // Mount routes with app.use()
 app.use('/', indexRouter);
 app.use('/goldendoodles', goldendoodlesRouter);
-app.use('/f1', f1Router)
+app.use('/f1', f1Router);
+app.use('/f1b', f1bRouter);
+app.use('/f1bb', f1bbRouter);
 
-//catch 404
-app.use(function (req, res, next) {
-    res.status(404).send('404 that does not exist');
-});
 
 // Tell App to listen
 app.listen(port, function() {
