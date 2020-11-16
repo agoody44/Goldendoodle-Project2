@@ -8,7 +8,7 @@ const f1Ctrl = require('../controllers/f1');
 
 
 //define your route for GET '/new'
-router.get('/f1', f1Ctrl.index);
+router.get('/', f1Ctrl.index);
 
 
 
