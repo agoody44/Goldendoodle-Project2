@@ -29,3 +29,35 @@
   .btn, .btn-primary{
     color: aliceblue;
   }
+
+  body {
+    display: inline;
+    
+   
+   
+  }
+
+  #box {
+    animation: animated-border 1.5s infinite;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    width: 500px;
+  }
+
+  img {
+    border: 5px solid #555;
+  }
+
+  #footer {
+    bottom: -50px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
