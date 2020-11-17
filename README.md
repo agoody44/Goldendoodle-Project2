@@ -7,6 +7,7 @@ A simple information page about Goldendoodle generations.
 -HTML5
 -CSS3
 -JavaScript
+-Bootstrap
 
 
 
@@ -17,7 +18,7 @@ A simple information page about Goldendoodle generations.
 
 ## Getting Started
 
-[Click Here]() to see the deployed app!ß
+[Click Here]() to see the deployed app!
 
 ## Future Enchancments
 - Add Login and Signup
