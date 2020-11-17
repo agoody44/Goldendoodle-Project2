@@ -11,13 +11,13 @@ A simple information page about Goldendoodle generations.
 
 
 ## Screenshots
-![wireframe](./imgs/Goldendoodles Wireframe HomePage.png)
-![wireframe](./imgs/Goldendoodles Wireframe Generations.png)
-![wireframe](./imgs/Goldendoodles Wireframe Selection.png)
+![wireframe](./imgs/Goldendoodles-Wireframe-HomePage.png)
+![wireframe](./imgs/Goldendoodles-Wireframe-Generations.png)
+![wireframe](./imgs/Goldendoodles-Wireframe-Selection.png)
 
 ## Getting Started
 
-[Click Here]() to see the deployed app!
+[Click Here]() to see the deployed app!ß
 
 ## Future Enchancments
 - Add Login and Signup
