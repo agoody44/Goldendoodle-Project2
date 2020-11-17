@@ -13,8 +13,8 @@ A simple information page about Goldendoodle generations.
 
 ## Screenshots
 ![wireframe1](./imgs/Goldendoodles-Wireframe-HomePage.png)
-![wireframe2](./imgs/Goldendoodles-Wireframe-Generations.png)
-![wireframe3](./imgs/Goldendoodles-Wireframe-Selection.png)
+![wireframe2](./imgs/Gooldendoodle-Wireframe-Generations.png)
+![wireframe3](./imgs/Goldendoodle-Wireframe-Selection.png)
 
 ## Getting Started
 
