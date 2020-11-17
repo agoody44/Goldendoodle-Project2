@@ -1,17 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Goldendoodle Seclection Page</title>
-</head>
-<a href="/">Go Back Home</a>
-<a href="/f1">F1</a>
-<a href="/f1b">F1B</a>
-<a href="/f1bb">F1BB</a>
-<a href="/f2">F2</a>
-<a href="/f2b">F2B</a>
-<a href="/f2bb">F2BB</a>
-<a href="/f3">F3</a>
-<a href="/multigen">Multigen</a>
+<%- include('../partials/header') %>
+
+
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <img class="card-img-top" src="../images/F1.png" alt="Card image cap" >
+        <div class="card-body">
+          <h5 class="card-title">F1 Goldendoodle</h5>
+          <p class="card-text">The First Generation (F1) Goldendoodle.</p>
+          <a href="/f1" class="btn btn-primary">Go To F1</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <img class="card-img-top" src="../images/f1b.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">F1B Goldendoodle</h5>
+          <p class="card-text">The F1B Goldendoodle is 75% Poodle and 25% Golden Retriever.</p>
+          <a href="/f1b" class="btn btn-primary">Go to F1B</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="../images/f1bb.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">F1BB Goldendoodle</h5>
+            <p class="card-text">To achieve an F1bb Goldendoodle, one parent is already an F1b Goldendoodle, which means the parent is 1/2 Golden Retriever & 1/2 Poodle.</p>
+            <a href="/f1bb" class="btn btn-primary">Go To F1BB</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="../images/f2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">F2 Goldendoodle</h5>
+            <p class="card-text">The second generation of Goldendoodles, F2, like their F1 parents are half Poodle and half Golden Retriever but are sired by hybrids instead of purebreds.</p>
+            <a href="/f2" class="btn btn-primary">Go to F2</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="../images/f2b.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">F2B Goldendoodle</h5>
+            <p class="card-text">The F2B Goldendoodles are 62.5% Poodle and only 37.5% Golden Retriever with one F1 parent and one F1B parent.</p>
+            <a href="/f2b" class="btn btn-primary">Go to F2B</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="../images/f2bb.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">F2BB Goldendoodle</h5>
+            <p class="card-text">This generation is produced by backcrossing an F2 Goldendoodle generation back to the Poodle twice.  It is the result of breeding an F1B and a Poodle.</p>
+            <a href="/f2bb" class="btn btn-primary">Go to F2BB</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="../images/f3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">F3 Goldendoodle</h5>
+            <p class="card-text">The third generation Goldendoodle (F3) is produced by crossing the F1B or F2 with another F1B or F2 Goldendoodle.</p>
+            <a href="/f3" class="btn btn-primary">Go to F3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="../images/multigen.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Multigen Goldendoodle</h5>
+            <p class="card-text">Goldendoodle is the product of breeding two Goldendoodles beyond the second generations (F2).</p>
+            <a href="/multigen" class="btn btn-primary">Go to Multigen</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+
+<%- include('../partials/footer') %>
+
+</html>
