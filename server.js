@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const port = 3000; 
+const session = require('express-session');
+const authorization = require('./utils/authorization');
 
 const indexRouter = require('./routes/index');
 // ^ requiring the index router
@@ -13,6 +15,8 @@ const f2bRouter = require('./routes/f2b')
 const f2bbRouter = require('./routes/f2bb')
 const f3Router = require('./routes/f3');
 const multigenRouter = require('./routes/multigen');
+
+const usersRouter = require('./routes/users');
 
 // Set up express app
 const app = express();
@@ -28,6 +32,12 @@ app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 
+app.use(session({
+    secret: 'supersecret',
+    resave: false,
+    saveUninitialized: false
+}));
+
 // Mount routes with app.use()
 app.use('/', indexRouter);
 app.use('/goldendoodles', goldendoodlesRouter);
@@ -40,6 +50,8 @@ app.use('/f2bb', f2bbRouter);
 app.use('/f3', f3Router);
 app.use('/multigen', multigenRouter);
 
+
+app.use('/users', usersRouter);
 
 // Tell App to listen
 app.listen(port, function() {
