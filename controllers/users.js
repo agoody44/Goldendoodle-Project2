@@ -8,6 +8,8 @@ module.exports = {
     signUp,
     signIn,
     login,
+    signOut,
+    profile,
 };
 
 function newUser(req, res) {
@@ -42,3 +44,17 @@ function login(req, res) {
         }
     });
 }
+
+function profile(req, res){
+    res.render('users/profile');
+};
+
+function signOut(req, res){
+    // destory the session
+    req.session.destroy(function(err){
+        //delete req.user
+        delete req.user;
+        // redirect back home
+        res.redirect('/');
+    });
+};

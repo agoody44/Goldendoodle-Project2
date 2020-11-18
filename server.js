@@ -38,6 +38,8 @@ app.use(session({
     saveUninitialized: false
 }));
 
+app.use(authorization.addUserToRequest);
+
 // Mount routes with app.use()
 app.use('/', indexRouter);
 app.use('/goldendoodles', goldendoodlesRouter);
