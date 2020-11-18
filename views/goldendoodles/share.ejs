@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+
+<h1> SHARE Your Doodle</h1>
+
+<h2>Create Doodles</h2>
+
+    <div class='form' action="/share" method="POST">
+        <label>Name:
+            <input type='text' name='name'>
+        </label>
+        <label>Sex:
+            <input type='text' name='sex'>
+        </label>
+        </label>
+        <label>Age:
+            <input type='text' name='age'>
+        </label>
+       
+        <input type="submit" value="Add Doodle">
+
+    </form>
+    </div>
+
+
+    <table id="list">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Sex<br>Number</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <% goldendoodles.forEach(function(g) { %>
+            <tr>
+              <td><%= g.name %></td>
+              <td><%= g.sex%></td>
+              <td><%= g.age %></td>
+            </tr>
+            <% }); %>
+            
+          </tbody>
+        </table>
+
+
+<%- include('../partials/footer') %>

@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const port = 3000; 
 const session = require('express-session');
 const authorization = require('./utils/authorization');
-const flash = require('connect-flash');
+
 
 
 
@@ -18,6 +18,7 @@ const f2bRouter = require('./routes/f2b')
 const f2bbRouter = require('./routes/f2bb')
 const f3Router = require('./routes/f3');
 const multigenRouter = require('./routes/multigen');
+const shareRouter = require('./routes/share');
 
 const usersRouter = require('./routes/users');
 
@@ -41,7 +42,7 @@ app.use(session({
     saveUninitialized: false
 }));
 
-app.use(flash());
+
 
 
 
@@ -58,6 +59,7 @@ app.use('/f2b', f2bRouter);
 app.use('/f2bb', f2bbRouter);
 app.use('/f3', f3Router);
 app.use('/multigen', multigenRouter);
+app.use('/share', shareRouter);
 
 
 app.use('/users', usersRouter);
