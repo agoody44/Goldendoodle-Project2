@@ -12,39 +12,40 @@
   }
 
 
-  .navbar-brand{
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-  }
 
-  body > nav {
+
+  #navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}​
+
+  nav {
     grid-area: nav;
-    background-color: #10a4c9;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px 0 30px;
   }
 
-
-  .btn, .btn-primary{
-    color: aliceblue;
-  }
-
   body {
     display: inline;
+    margin: 0;
+    padding: 0;
  
    
    
   }
 
-  .home {
+  /* index page background image */
+  .home, .login, .signup {
     background-image: url("../images/paw-prints.jpeg");
     background-color: #cccccc;
     
   }
 
+
+  /* border around text info in GL page */
   #box {
     animation: animated-border 1.5s infinite;
     font-family: Arial;
@@ -56,8 +57,10 @@
     border-radius: 5px;
     padding: 5px;
     width: 500px;
+    box-shadow: 5px 10px;
   }
 
+  /* border of images */
   img {
     border: 5px solid #555;
   }
@@ -70,33 +73,6 @@
     right: 0;
   }
 
-  #gl{
-    display: flex;
-    flex-wrap: wrap;
-	  margin-right: -15px;
-    margin-left: -15px;
-}
-
-div.form
-{
-    display: block;
+  .card-text, .card-title{
     text-align: center;
-    border: 2px solid red;
-    border-radius: 20px;
-    
-                
-    
-    
-}
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-   
-}
-
-h1 {
-  text-align: center;
-}
+  }

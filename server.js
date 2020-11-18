@@ -3,6 +3,9 @@ const morgan = require('morgan');
 const port = 3000; 
 const session = require('express-session');
 const authorization = require('./utils/authorization');
+const flash = require('connect-flash');
+
+
 
 const indexRouter = require('./routes/index');
 // ^ requiring the index router
@@ -37,6 +40,10 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
+
+app.use(flash());
+
+
 
 app.use(authorization.addUserToRequest);
 

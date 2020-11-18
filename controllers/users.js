@@ -19,6 +19,7 @@ function newUser(req, res) {
 function signUp(req, res) {
     req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
     User.create(req.body, function (error, newUser) {
+        
         res.redirect('/');
     });
 }
@@ -32,12 +33,14 @@ function login(req, res) {
         username: req.body.username
     }, function (error, foundUser) {
         if (foundUser === null) {
+            req.flash("error", err.message);
             res.redirect('/users/signin');
         } else {
             const doesPasswordMatch = bcrypt.compareSync(req.body.password, foundUser.password);
             if (doesPasswordMatch) {
                 req.session.userId = foundUser._id; 
-                res.redirect('/');
+                req.flash("success", "successfuly Signed up");
+                res.redirect('/users/signin'); // redirect back to main change!!!!!!!!!!
             } else {
                 res.redirect('/users/signin');
             }
