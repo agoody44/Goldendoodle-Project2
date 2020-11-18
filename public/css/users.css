@@ -19,6 +19,14 @@ body {
     background-color: rgb(150, 150, 150);
     overflow: hidden;
   }
+
+  .topnav-centered a {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: none;
+  }
+  
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -46,15 +54,28 @@ body {
   }
 
 
-div.form
-{
-    display: block;
+  div.form
+  {
+      display: block;
+      text-align: center;
+  }
+  form
+  {
+      
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+  }
+
+  h1 {
     text-align: center;
-}
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
+  }
+
+  #footer {
+    bottom: -50px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
