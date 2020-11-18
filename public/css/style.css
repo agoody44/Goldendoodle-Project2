@@ -73,6 +73,6 @@
     right: 0;
   }
 
-  .card-text, .card-title{
+  .card-text, .card-title, .btn{
     text-align: center;
   }
