@@ -4,6 +4,7 @@ const SALT_ROUNDS = 10;
 
 
 module.exports = {
+    index,
     new: newUser,
     signUp,
     signIn,
@@ -11,6 +12,10 @@ module.exports = {
     signOut,
     profile,
 };
+
+function index(req, res) {
+    res.render('index.ejs');
+}
 
 function newUser(req, res) {
     res.render('users/new');
@@ -33,13 +38,11 @@ function login(req, res) {
         username: req.body.username
     }, function (error, foundUser) {
         if (foundUser === null) {
-            req.flash("error", err.message);
             res.redirect('/users/signin');
         } else {
             const doesPasswordMatch = bcrypt.compareSync(req.body.password, foundUser.password);
             if (doesPasswordMatch) {
                 req.session.userId = foundUser._id; 
-                req.flash("success", "successfuly Signed up");
                 res.redirect('/users/signin'); // redirect back to main change!!!!!!!!!!
             } else {
                 res.redirect('/users/signin');

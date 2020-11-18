@@ -12,18 +12,12 @@
     <title>Goldendoodle Seclection Page</title>
 </head>
 
-<body>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <!-- <a class="navbar-brand" href="/">GoldenDoodles</a> -->
-            </div>
-            <ul class="nav navbar-nav">
-                <!-- <i class="fas fa-paw fa-lg"></i> -->
-                <li><a href="/">Home</a></li>
-                <li><a href="/goldendoodles">Generations List</a></li>
-
+<div class="topnav">
+    
+    <div class="topnav-centered">     
+    <a href="/">Home</a>
+                <a href="/goldendoodles">Generations List</a>
+    </div>
     
                 <!-- <li><a href="/f1">F1</a></li>
                 <li><a href="/f1b">F1B</a></li>
@@ -34,14 +28,12 @@
                 <li><a href="/f3">F3</a></li>
                 <li><a href="/multigen">Multigen</a></li> -->
 
-                <li><a href="/users/new"> <i class="far fa-registered"></i>Register</a></li>
+               <a href="/users/new" id='auth'> <i class="far fa-registered"></i>Register</a>
 
-                <li><a href="/users/signin"> <i class="fa fa-fw fa-user"></i> Login</a></li>
+                <a href="/users/signin" id='auth'> <i class="fa fa-fw fa-user"></i> Login</a>
 
-                <li><a href="/users/signout"> <i class="fas fa-sign-out-alt"></i>Logout</a></li>
+               <a href="/users/signout" id='auth'> <i class="fas fa-sign-out-alt"></i>Logout</a>
 
-            </ul>
-        </div>
-    </nav>
+        
+</div>
 
-</body>

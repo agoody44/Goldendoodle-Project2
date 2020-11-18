@@ -15,14 +15,3 @@ function index(req, res) {
         res.render('goldendoodles/index', { goldendoodles })
     });
 };
-
-// function newFlight(req, res) {
-//  res.render('flights/new');
-// }
-
-// function create(req, res) {
-//     console.log(req.body);
-//     req.body.done = false;
-//     Flight.create(req.body);
-//     res.redirect('/flights');
-//   }

@@ -12,21 +12,52 @@
   }
 
 
+  /* Add a background color to the top navigation */
+.topnav {
+  background-color: rgb(150, 150, 150);
+  overflow: hidden;
+}
+
+.topnav-centered a {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: none;
+}
 
 
-  #navbar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}​
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 
-  nav {
-    grid-area: nav;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 20px 0 30px;
-  }
+  
+}
+
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#auth {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+
 
   body {
     display: inline;
@@ -76,3 +107,6 @@
   .card-text, .card-title, .btn-btn-primary{
     text-align: center;
   }
+
+
+  
