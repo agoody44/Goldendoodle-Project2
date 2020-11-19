@@ -10,6 +10,7 @@ const shareCtrl = require('../controllers/share');
 //define your route for GET '/new'
 router.get('/', shareCtrl.index);
 router.get('/share', shareCtrl.new);
+router.put('/:id/', shareCtrl.update)
 router.post('/', shareCtrl.create);
 router.get('/:id/edit', shareCtrl.edit)
 

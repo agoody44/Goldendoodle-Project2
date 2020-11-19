@@ -2,9 +2,9 @@
 
 <h1> SHARE Your Doodle</h1>
 
-<h2>Create Doodles</h2>
 
-    <div class='form' action="/share" method="POST">
+<div class='form' action="/share" method="POST">
+  
         <label>Name:
             <input type='text' name='name'>
         </label>
@@ -38,8 +38,10 @@
               <td><%= g.name %></td>
               <td><%= g.sex%></td>
               <td><%= g.age %></td>
-              <td><img src='<%= g.image %>' style="width:200px;height:300px;"></td>
+              <td><img src='<%= g.image %>' style="width:250px;height:300px;"></td>
+              
             </tr>
+            
             <% }); %>
             
           </tbody>

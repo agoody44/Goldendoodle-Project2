@@ -140,6 +140,10 @@
    border: solid;
  }
 
+ td {
+  font-size: large;
+ }
+
 .center {
   border: solid;
   margin-left: auto;

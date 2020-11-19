@@ -5,6 +5,7 @@ module.exports = {
     new: newGoldendoodle,
     create,
     edit,
+    update,
 };
 
 //define the new function (controller function)
@@ -19,6 +20,12 @@ function newGoldendoodle(req, res) {
     res.render('/share');
    }
 
+   function update(req, res) {
+    Goldendoodle.findByIdAndUpdate(req.params.id, req.body, function(err, Goldendoodle) {
+      res.redirect('/share')
+    });
+  }
+
 
    function create(req, res) {
     console.log(req.body);
@@ -29,6 +36,6 @@ function newGoldendoodle(req, res) {
 
   function edit(req, res) {
     Goldendoodle.findById(req.params.id, function(err, goldendoodle) {
-      res.render('share/edit', { Goldendoodle });
+      res.render('share/edit', { goldendoodle });
     });
   }
