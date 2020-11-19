@@ -5,6 +5,7 @@ const goldendoodleSchema = new Schema({
     name: String,
     sex: String,
     age: Number,
+    image: String,
   });
 
 

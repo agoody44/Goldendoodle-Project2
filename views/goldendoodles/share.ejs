@@ -20,14 +20,15 @@
 
     </form>
     </div>
+    <br>
 
-
-    <table id="list">
+    <table class='center' style='width:30%' id="list">
         <thead>
           <tr>
             <th>Name</th>
-            <th>Sex<br>Number</th>
+            <th>Sex</th>
             <th>Age</th>
+            <th>Image</th>
           </tr>
         </thead>
         
@@ -37,11 +38,12 @@
               <td><%= g.name %></td>
               <td><%= g.sex%></td>
               <td><%= g.age %></td>
+              <td><img src='<%= g.image %>' style="width:200px;height:300px;"></td>
             </tr>
             <% }); %>
             
           </tbody>
         </table>
 
-
+<br>
 <%- include('../partials/footer') %>
