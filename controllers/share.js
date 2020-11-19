@@ -1,3 +1,4 @@
+const { findById, findByIdAndUpdate } = require('../models/goldendoodle.js');
 const Goldendoodle = require('../models/goldendoodle.js')
 
 module.exports = {
@@ -31,6 +32,7 @@ function deleteGoldendoodle(req, res) {
 }
 
 function update(req, res) {
+  console.log (req.body)
   Goldendoodle.findByIdAndUpdate(req.params.id, req.body, function (err, Goldendoodle) {
     res.redirect('/share')
   });
@@ -46,7 +48,6 @@ function create(req, res) {
 
 function edit(req, res) {
   Goldendoodle.findById(req.params.id, function(err, goldendoodle) {
-    console.log(edit);
     res.render('goldendoodles/edit', { goldendoodle });
   });
 }

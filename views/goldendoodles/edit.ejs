@@ -10,7 +10,7 @@
 
 <body>
   <h1>Edit Doodle</h1>
-  <form action="/share/ <%= goldendoodle._id %>?_method=PUT" method="POST">
+  <form action="/share/<%= goldendoodle._id %>?_method=PUT" method="POST">
     <label>Name:
         <input type='text' name='name' value="<%= goldendoodle.name  %>">
     </label>
@@ -22,7 +22,7 @@
         <input type='text' name='age' value="<%= goldendoodle.age  %>">
     </label>
    
-    <input type="submit" value="Edit Doodle">
+    <button type="submit">Save Doodle</button>
 
 </form>
 </body>

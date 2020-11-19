@@ -14,7 +14,15 @@
         </label>
         <label>Age:
             <input type='text' name='age'>
-        </label>
+          </label>
+
+
+          <label for="Images">Images</label>
+          <select name="scarlet" id="scar" class="icon-menu">
+          <option style="padding-left:0px;" value="">Select a Doodle Image</option>
+          <option style="background-image:url(https://imgur.com/k34xAuj.jpg);" value="img">Scarlet</option>
+
+            
        
         <input type="submit" value="Add Doodle">
 
@@ -22,7 +30,7 @@
     
     <br>
 
-    <table class='center' style='width:40%' id="list">
+    <table class='center' style='width:50%' id="list">
         <thead>
           <tr>
             <th>Name</th>
@@ -48,7 +56,7 @@
 
             <a href="/share/<%= g._id %>/edit">Edit</a>
 
-            </tr>
+            </tr></td>
             
             <% }); %>
             
