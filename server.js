@@ -1,9 +1,9 @@
 const express = require('express');
 const morgan = require('morgan');
-const port = 3000; 
 const session = require('express-session');
 const authorization = require('./utils/authorization');
 const methodOverride = require('method-override');
+const port = process.env.PORT || '3000';
 
 
 
@@ -26,6 +26,9 @@ const usersRouter = require('./routes/users');
 // Set up express app
 const app = express();
 
+// configure doteenv above the db config
+require('dotenv').config();
+
 // Connect to DB
 require('./config/database');
 
@@ -39,7 +42,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.use(session({
-    secret: 'supersecret',
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false
 }));
