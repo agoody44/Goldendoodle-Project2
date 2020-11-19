@@ -25,10 +25,11 @@
   top: 50%;
   left: 50%;
   transform: none;
+  
 }
 
 
-/* Style the links inside the navigation bar */
+ /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -73,7 +74,7 @@
   /* index page background image */
   .home, .login, .signup {
     background-image: url("../images/paw-prints.jpeg");
-    background-color: #cccccc;
+    
     
   }
 
@@ -96,6 +97,11 @@
   /* border of images */
   img {
     border: 5px solid #555;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 10px;
   }
 
 
@@ -128,6 +134,7 @@
   tr , th , td  {
     padding: 5%;
     text-align: center;
+    font-size: 15px;
 }
  thead {
    border: solid;
@@ -144,7 +151,6 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
-  color: white;
-   text-align: center;
+  width: 100%;  
+  text-align: center;
 }
