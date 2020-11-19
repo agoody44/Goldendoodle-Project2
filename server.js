@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const port = 3000; 
 const session = require('express-session');
 const authorization = require('./utils/authorization');
+const methodOverride = require('method-override');
 
 
 
@@ -35,6 +36,7 @@ app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 
 app.use(session({
     secret: 'supersecret',

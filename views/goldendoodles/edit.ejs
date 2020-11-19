@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Goldendoodles</title>
+</head>
+
+<body>
+  <h1>Edit Doodle</h1>
+  <form action="/share/ <%= goldendoodle._id %>?_method=PUT" method="POST">
+    <label>Name:
+        <input type='text' name='name' value="<%= goldendoodle.name  %>">
+    </label>
+    <label>Sex:
+        <input type='text' name='sex' value="<%= goldendoodle.sex  %>">
+    </label>
+    </label>
+    <label>Age:
+        <input type='text' name='age' value="<%= goldendoodle.age  %>">
+    </label>
+   
+    <input type="submit" value="Edit Doodle">
+
+</form>
+</body>
+
+</html>

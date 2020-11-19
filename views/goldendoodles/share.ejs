@@ -3,7 +3,7 @@
 <h1> SHARE Your Doodle</h1>
 
 
-<div class='form' action="/share" method="POST">
+<form class='form' action="/share" method="POST">
   
         <label>Name:
             <input type='text' name='name'>
@@ -19,10 +19,10 @@
         <input type="submit" value="Add Doodle">
 
     </form>
-    </div>
+    
     <br>
 
-    <table class='center' style='width:30%' id="list">
+    <table class='center' style='width:40%' id="list">
         <thead>
           <tr>
             <th>Name</th>
@@ -34,18 +34,25 @@
         
         <tbody>
           <% goldendoodles.forEach(function(g) { %>
-            <tr>
+            <tr><td>
               <td><%= g.name %></td>
               <td><%= g.sex%></td>
               <td><%= g.age %></td>
               <td><img src='<%= g.image %>' style="width:250px;height:300px;"></td>
               
+              <form action='/share/<%= g._id %>?_method=DELETE' class='delete-form' method='post'>
+
+                <button type='submit'>X</button>
+
+            </form>
+
+            <a href="/share/<%= g._id %>/edit">Edit</a>
+
             </tr>
             
             <% }); %>
             
           </tbody>
-        </table>
-
+      
 <br>
 <%- include('../partials/footer') %>
