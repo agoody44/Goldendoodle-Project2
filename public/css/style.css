@@ -62,14 +62,14 @@
 
 
 
-  body {
+  /* body {
     display: inline;
     margin: 0;
     padding: 0;
  
    
    
-  }
+  } */
 
   /* index page background image */
   .home, .login, .signup {
@@ -128,7 +128,7 @@
   }
   
 
-  tr , th , td  {
+  /* tr , th , td  {
     padding: 5%;
     text-align: center;
     font-size: 15px;
@@ -139,13 +139,13 @@
 
  td {
   font-size: large;
- }
+ } */
 
-.center {
+/* .center {
   border: solid;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 footer {
   background-color: rgb(150, 150, 150);
@@ -154,4 +154,44 @@ footer {
   bottom: 0;
   width: 100%;  
   text-align: center;
+}
+
+.edit {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.delete{
+  display: inline-block;
+  margin-right: 10px;
+ }
+ 
+ button {
+  color: rgb(0, 0, 0);
+ }
+
+ ul {
+  list-style-type: none;
+}
+
+ 
+
+.titles {
+  margin: auto;
+  width: 50%;
+  border: 3px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.GDShare {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  text-align: center;
+  margin: auto;
+  width: 50%;
 }
