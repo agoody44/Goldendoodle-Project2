@@ -14,8 +14,10 @@
 
   /* Add a background color to the top navigation */
 .topnav {
+  position: relative;
   background-color: rgb(150, 150, 150);
   overflow: hidden;
+  
 }
 
 .topnav-centered a {
