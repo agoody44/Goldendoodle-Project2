@@ -5,13 +5,17 @@
 }
 
 
+.home, .login, .signup {
+  background-image: url("../images/paw-prints.jpeg");
+  
+  
+}
+
 body {
     display: inline;
     margin: 0;
     padding: 0;
  
-   
-   
   }
 
   /* Add a background color to the top navigation */
@@ -54,7 +58,7 @@ body {
   }
 
 
-  div.form
+.form
   {
       display: block;
       text-align: center;
@@ -69,14 +73,6 @@ body {
       background-color: white;
 
     
-  }
-  form
-  {
-      
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
   }
 
   h1 {
