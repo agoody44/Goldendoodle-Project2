@@ -18,6 +18,7 @@ A simple information page about Goldendoodle generations.
 ![wireframe2](./imgs/Gooldendoodle-Wireframe-Generations.png)
 ![wireframe3](./imgs/Goldendoodle-Wireframe-Selection.png)
 ![wireframe4](./imgs/Goldendoodles-Wireframe-SharePage.png)
+![wireframe5](./imgs/Goldendoodles-Wireframe-EditPage.png)
 ![ERD](./imgs/ERD.png)
 
 ## Getting Started
