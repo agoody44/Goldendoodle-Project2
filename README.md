@@ -23,6 +23,7 @@ A simple information page about Goldendoodle generations.
 ## Getting Started
 
 [Click Here](https://goldendoodles.herokuapp.com/) to see the deployed app!
+
 [Click Here](https://trello.com/b/IvMbKc6Z/project-2) Trello Board!
 
 ## Future Enchancments
