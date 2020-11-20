@@ -1,29 +1,29 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #424748;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #424748;
 }
 
 #bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 
-  /* Add a background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
   position: relative;
   background-color: rgb(150, 150, 150);
   overflow: hidden;
-  
+
 }
 
 
 
 
- /* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -32,7 +32,7 @@
   text-decoration: none;
   font-size: 17px;
 
-  
+
 }
 
 
@@ -56,7 +56,7 @@
 
 
 
-  /* body {
+/* body {
     display: inline;
     margin: 0;
     padding: 0;
@@ -65,75 +65,80 @@
    
   } */
 
-  /* index page background image */
-  .home, .login, .signup {
-    background-image: url("../images/paw-prints.jpeg");
-    
-    
-  }
+/* index page background image */
+.home,
+.login,
+.signup {
+  background-image: url("../images/paw-prints.jpeg");
 
 
-  /* border around text info in GL page */
-  #box {
-    animation: animated-border 1.5s infinite;
-    font-family: Arial;
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 5px;
-    width: 500px;
-    box-shadow: 5px 10px;
-  }
-
-  /* border of images */
-  img {
-    border: 5px solid #555;
-    color: rgb(0, 0, 0);
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 5px 10px;
-  }
-
-
-
-  .card-text, .card-title, .btn-btn-primary{
-    text-align: center;
-  }
-
-
-
-  .form
-  {
-      display: block;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      border: solid;
-     
-  }
-
-
-  h1, h2 {
-    text-align: center;
-  }
-  
-
-  /* tr , th , td  {
-    padding: 5%;
-    text-align: center;
-    font-size: 15px;
 }
- thead {
-   border: solid;
- }
 
- td {
+
+/* border around text info in GL page */
+#box {
+  animation: animated-border 1.5s infinite;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  width: 500px;
+  box-shadow: 5px 10px;
+}
+
+/* border of images */
+img {
+  border: 5px solid #555;
+  color: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 5px 10px;
+}
+
+
+
+.card-text,
+.card-title,
+.btn-btn-primary {
+  text-align: center;
+}
+
+
+
+.form {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+
+}
+
+
+h1,
+h2 {
+  text-align: center;
+}
+
+
+tr,
+th,
+td {
+  padding: 5%;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+td {
   font-size: large;
- } */
+}
 
 /* .center {
   border: solid;
@@ -146,7 +151,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;  
+  width: 100%;
   text-align: center;
 }
 
@@ -158,20 +163,14 @@ footer {
 }
 
 
-.delete{
-  display: inline-block;
-  margin-right: 10px;
- }
- 
- button {
-  color: rgb(0, 0, 0);
- }
 
- ul {
+
+
+ul {
   list-style-type: none;
 }
 
- 
+
 
 .titles {
   margin: auto;
@@ -181,11 +180,22 @@ footer {
   text-align: center;
 }
 
-.GDShare {
-  display: flex;
-  flex-direction: column;
-  border: solid;
+
+.container-fluid {
+  border-radius: ;
   text-align: center;
   margin: auto;
-  width: 50%;
+  width: 30%;
+  color: rgb(130, 130, 130);
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 5px 10px;
+}
+
+.row-share {
+  margin-left: auto;
+  margin-right: auto;
+  width: 9em;
+
 }

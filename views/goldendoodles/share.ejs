@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<h1> SHARE Your Doodle</h1>
+<h1> Share Your Doodle</h1>
 
 
 <form class='form' action="/share" method="POST">
@@ -17,55 +17,65 @@
   </label>
 
 
-  <label for="Images">Images</label>
-  <select name="scarlet" id="scar" class="icon-menu">
-    <option style="padding-left:0px;" value="">Select a Doodle Image</option>
-    <option style="background-image:url(https://imgur.com/k34xAuj.jpg);" value="img">Scarlet</option>
+  <label for="Images"> Images</label>
+  <select name="rating">
+    <option value="Scarlet"><IMG src="../images/Scarlet.JPG"> Scarlet</option>
+    <option value="Scarlet"><IMG src="../images/Scarlet.JPG"> Paisley</option>
+    <option value="Meg"><IMG src="../images/meg-camping.jpeg"> Meg</option>
+  </select>
 
 
 
-    <input type="submit" value="Add Doodle">
+  <input type="submit" value="Add Doodle">
 
 </form>
 
 <br>
 
-<div class='titles' style='width:50%' id="list">
+<!-- <div class='titles' style='width:60%' id="list">
+  <tbody>
+    <table id="list">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Sex</th>
+          <th>Age</th>
+          <th>image</th>
+        </tr>
+      </thead>
+    </table>
+</div> -->
 
-  <label>Name</label>
-  <label>Sex</label>
-  <label>Age</label>
-  <label>Image</label>
+<div class='container-fluid'>
+  <div class="row-share">
+    <div class="col-md-3">
 
-</div>
-
-<body>
-  <div class='GDShare'>
-    <ul>
       <% goldendoodles.forEach(function(g) { %>
+      <div class="text">
 
-      <li><%= g.name %></li>
-      <li><%= g.sex%></li>
-      <li><%= g.age %></li>
-      <li><img src='<%= g.image %>' style="width:250px;height:300px;"></li>
+        <p><%= g.name %></p>
+        <p><%= g.sex%></p>
+        <p><%= g.age %></p>
+        <img src='<%= g.image %>' style="width:250px;height:300px;">
+
+      </div>
 
       <form action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
 
         <br>
-        
-        <button type='submit'>X</button>
+
+        <button class='x' type='submit'>X</button>
 
       </form>
       <a href="/share/<%= g._id %>/edit">Edit</a>
 
-
-
-
       <% }); %>
 
-    </ul>
+
+    </div>
   </div>
-</body>
+</div>
+
 
 <br>
 <%- include('../partials/footer') %>
