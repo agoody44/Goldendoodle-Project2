@@ -8,18 +8,22 @@ A simple information page about Goldendoodle generations.
 -CSS3
 -JavaScript
 -Bootstrap
-
+-Font Awesome
+-MongoDB
+-Express
 
 
 ## Screenshots
 ![wireframe1](./imgs/Goldendoodles-Wireframe-HomePage.png)
 ![wireframe2](./imgs/Gooldendoodle-Wireframe-Generations.png)
 ![wireframe3](./imgs/Goldendoodle-Wireframe-Selection.png)
+![wireframe4](./imgs/Goldendoodles-Wireframe-SharePage.png)
 
 ## Getting Started
 
-[Click Here]() to see the deployed app!
+[Click Here](https://goldendoodles.herokuapp.com/) to see the deployed app!
 
 ## Future Enchancments
-- Add Login and Signup
+- Add Show Logged in user
 - Add where to buy
+- Fix CSS

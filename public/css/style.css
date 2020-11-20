@@ -126,25 +126,7 @@ h2 {
 }
 
 
-tr,
-th,
-td {
-  padding: 5%;
-  text-align: center;
-  font-size: 15px;
-}
 
-
-
-td {
-  font-size: large;
-}
-
-/* .center {
-  border: solid;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 footer {
   background-color: rgb(150, 150, 150);
@@ -182,7 +164,6 @@ ul {
 
 
 .container-fluid {
-  border-radius: ;
   text-align: center;
   margin: auto;
   width: 30%;
@@ -191,11 +172,4 @@ ul {
   border-radius: 5px;
   padding: 5px;
   box-shadow: 5px 10px;
-}
-
-.row-share {
-  margin-left: auto;
-  margin-right: auto;
-  width: 9em;
-
 }
