@@ -1,4 +1,4 @@
-const { findById, findByIdAndUpdate } = require('../models/goldendoodle.js');
+
 const Goldendoodle = require('../models/goldendoodle.js')
 
 module.exports = {
@@ -22,7 +22,7 @@ function index(req, res) {
 }
 
 function newGoldendoodle(req, res) {
-  res.render('/share');
+  res.render('share');
 }
 
 function deleteGoldendoodle(req, res) {

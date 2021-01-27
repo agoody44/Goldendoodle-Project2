@@ -5,7 +5,8 @@ const connectionURI = process.env.DATABASE_URI
 mongoose.connect(connectionURI, {
 	useNewUrlParser: true, 
 	useCreateIndex: true,
-	useUnifiedTopology: true 
+	useUnifiedTopology: true, 
+	useFindAndModify: false
 });
 
 // shortcut to mongoose.connection object

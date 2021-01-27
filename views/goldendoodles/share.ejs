@@ -18,10 +18,10 @@
 
 
   <label for="Images"> Images</label>
-  <select name="rating">
-    <option value="Scarlet"><IMG src=".../images/Scarlet.JPG"> Scarlet</option>
-    <option value="Scarlet"><IMG src="../images/Paisley.JPG"> Paisley</option>
-    <option value="Meg"><IMG src="../images/meg-camping.jpeg"> Meg</option>
+  <select name="image">
+    <option style="background-image:url('../images/Scarlet.JPG');"> Scarlet</option>
+    <option value="Paisley"><img src="(https://imgur.com/sTUWmRr)"> Paisley</option>
+    <option value="Meg"><img src="../images/meg-camping.jpeg"> Meg</option>
   </select>
 
 
@@ -56,9 +56,9 @@
         <p><%= g.name %></p>
         <p><%= g.sex%></p>
         <p><%= g.age %></p>
+      </div>
         <img src='<%= g.image %>' style="width:250px;height:300px;">
 
-      </div>
 
       <form action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
 
