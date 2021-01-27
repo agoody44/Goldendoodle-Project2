@@ -60,9 +60,6 @@
     display: inline;
     margin: 0;
     padding: 0;
- 
-   
-   
   } */
 
 /* index page background image */
@@ -91,13 +88,15 @@
 }
 
 /* border of images */
-img {
+.card {
   border: 5px solid #555;
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border: 2px solid;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   box-shadow: 5px 10px;
+  margin-bottom: 18px;
 }
 
 
@@ -174,3 +173,4 @@ ul {
   padding: 5px;
   box-shadow: 5px 10px;
 }
+
