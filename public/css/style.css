@@ -73,7 +73,7 @@
 
 
 /* border around text info in GL page */
-/* #box {
+#box {
 animation: animated-border 1.5s infinite;
   font-family: Arial;
   font-size: 15px;
@@ -85,7 +85,7 @@ animation: animated-border 1.5s infinite;
   padding: 5px;
   width: 500px;
   box-shadow: 5px 10px;
-} */
+}
 
 /* border of images */
 .card {
