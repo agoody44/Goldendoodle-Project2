@@ -2,49 +2,37 @@
 
 <h1> Share Your Doodle</h1>
 
+<div class='formParent'>
+  <form class='formDoodles' action="/share" method="POST">
 
-<form class='form' action="/share" method="POST">
-
-  <label>Name:
-    <input type='text' name='name'>
-  </label>
-  <label>Sex:
-    <input type='text' name='sex'>
-  </label>
-  </label>
-  <label>Age:
-    <input type='text' name='age'>
-  </label>
-
-
-  <label for="Images"> Images</label>
-  <select name="image">
-    <option style="background-image:url('../images/Scarlet.JPG');"> Scarlet</option>
-    <option value="Paisley"><img src="(https://imgur.com/sTUWmRr)"> Paisley</option>
-    <option value="Meg"><img src="../images/meg-camping.jpeg"> Meg</option>
-  </select>
+    <label>Name:
+      <input type='text' name='name'>
+    </label>
+    <label>Sex:
+      <input type='text' name='sex'>
+    </label>
+    </label>
+    <label>Age:
+      <input type='text' name='age'>
+    </label>
 
 
+    <label for="Images"> Images</label>
+    <input type='text' name="image">
+    </input>
 
-  <input type="submit" value="Add Doodle">
+    <!-- <form action='/api/images' method="post" enctype="multipart/form-data">
+      <input type='file' name='image' />
+    </form> -->
 
-</form>
 
+
+    <input type="submit" value="Add Doodle">
+
+  </form>
+</div>
 <br>
 
-<!-- <div class='titles' style='width:60%' id="list">
-  <tbody>
-    <table id="list">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Sex</th>
-          <th>Age</th>
-          <th>image</th>
-        </tr>
-      </thead>
-    </table>
-</div> -->
 
 <div class='container-fluid'>
   <div class="row-share">
@@ -53,9 +41,9 @@
       <% goldendoodles.forEach(function(g) { %>
       <div class="text">
 
-        <p><%= g.name %></p>
-        <p><%= g.sex%></p>
-        <p><%= g.age %></p>
+        <h1>Name:<%= g.name %></h1>
+        <h2>Gender:<%= g.sex%></h2>
+        <h3>Age:<%= g.age %></h3>
       </div>
         <img src='<%= g.image %>' style="width:250px;height:300px;">
 
@@ -63,11 +51,10 @@
       <form action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
 
         <br>
-
+        <a href="/share/<%= g._id %>/edit">Edit</a>
         <button class='x' type='submit'>X</button>
 
       </form>
-      <a href="/share/<%= g._id %>/edit">Edit</a>
 
       <% }); %>
 

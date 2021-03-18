@@ -11,12 +11,11 @@
   
 }
 
-body {
+/* body {
     display: inline;
     margin: 0;
     padding: 0;
- 
-  }
+  } */
 
 /* Add a background color to the top navigation */
 .topnav {
@@ -25,8 +24,6 @@ body {
   overflow: hidden;
 
 }
-
-
 
 
 /* Style the links inside the navigation bar */
@@ -73,8 +70,6 @@ body {
       padding: 5px;
       box-shadow: 5px 10px;
       background-color: white;
-
-    
   }
 
   h1 {

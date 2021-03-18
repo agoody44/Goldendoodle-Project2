@@ -73,8 +73,8 @@
 
 
 /* border around text info in GL page */
-#box {
-  animation: animated-border 1.5s infinite;
+/* #box {
+animation: animated-border 1.5s infinite;
   font-family: Arial;
   font-size: 15px;
   line-height: 25px;
@@ -85,7 +85,7 @@
   padding: 5px;
   width: 500px;
   box-shadow: 5px 10px;
-}
+} */
 
 /* border of images */
 .card {
@@ -109,15 +109,6 @@
 
 
 
-.form {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid;
-
-}
-
 
 h1,
 h2 {
@@ -126,15 +117,6 @@ h2 {
 
 
 
-
-footer {
-  background-color: rgb(150, 150, 150);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
 
 .edit {
   border-radius: 5px;
@@ -162,15 +144,35 @@ ul {
 }
 
 
+/* added dogs container*/
 .container-fluid {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin: auto;
   width: 30%;
-  color: rgb(130, 130, 130);
   border: 2px solid;
   border-radius: 5px;
   padding: 5px;
   box-shadow: 5px 10px;
+}
+
+.text{
+  text-align: center;
+}
+
+.formParent{
+  display: table;
+  width: 100%;
+}
+
+.formDoodles{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
 }
 
