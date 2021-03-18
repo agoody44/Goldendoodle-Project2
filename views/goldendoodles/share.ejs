@@ -35,34 +35,38 @@
 
 
 <div class='container-fluid'>
-  <div class="row-share">
+  <div class="row-dog">
     <div class="col-md-3">
 
       <% goldendoodles.forEach(function(g) { %>
-      <div class="text">
 
-        <h1>Name:<%= g.name %></h1>
-        <h2>Gender:<%= g.sex%></h2>
-        <h3>Age:<%= g.age %></h3>
-      </div>
-        <img src='<%= g.image %>' style="width:250px;height:300px;">
+        <div class="text">
+          <h3><strong>Name</strong>:<%= g.name %></h3>
+          <h3><strong>Gender</strong>:<%= g.sex%></h3>
+          <h3><strong>Age</strong>:<%= g.age %></h3>
 
 
-      <form action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
-
+          <form action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
+            <br>
+            <a href="/share/<%= g._id %>/edit">Edit</a>
+            <button class='x' type='submit'>X</button>
+          </form>
+        </div>  
         <br>
-        <a href="/share/<%= g._id %>/edit">Edit</a>
-        <button class='x' type='submit'>X</button>
+          <img class='shared-dogs'src='<%= g.image %>' style="width:250px;height:300px;">
 
-      </form>
 
-      <% }); %>
+        <% }); %>
+  
 
 
     </div>
   </div>
 </div>
 
-
 <br>
+<br>
+<br>
+
+
 <%- include('../partials/footer') %>
