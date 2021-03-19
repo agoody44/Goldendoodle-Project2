@@ -44,14 +44,14 @@
           <h3><strong>Name</strong>:<%= g.name %></h3>
           <h3><strong>Gender</strong>:<%= g.sex%></h3>
           <h3><strong>Age</strong>:<%= g.age %></h3>
+        </div>   
 
-
-          <form action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
+          <form class="edit-delete" action='/share/<%= g._id %>?_method=DELETE' class='delete' method='post'>
             <br>
-            <a href="/share/<%= g._id %>/edit">Edit</a>
-            <button class='x' type='submit'>X</button>
+            <a class='button'href="/share/<%= g._id %>/edit">Edit</a>
+            <button class='button' type='submit'>X</button>
           </form>
-        </div>  
+
         <br>
           <img class='shared-dogs'src='<%= g.image %>' style="width:250px;height:300px;">
 
